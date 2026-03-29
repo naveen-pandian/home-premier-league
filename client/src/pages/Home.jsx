@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import MatchTable from '../components/MatchTable';
+import Points from '../components/Points';
+import SomethingWentWrong from '../components/SomethingWentWrong';
+import HomePage from '../components/HomePage';
 import Loading from '../components/Loading';
 
 const Home = () => {
@@ -28,17 +31,17 @@ const Home = () => {
 
     // Map each tab id → the component to render
     const pages = {
-        home:    <div> Home Page</div>,
-        Points:  <div>Points Page</div>,   // replace with your real component
-        Amount:  <div>Amount Page</div>,
-        Status:  <div>Status Page</div>,
+        home:    <HomePage players={players} matchHistory={matchHistory} />,
+        Amount:  <SomethingWentWrong />,   
+        Points:  <Points matchHistory={matchHistory} players={players} />,
+        Status:  <SomethingWentWrong />,
         History: <MatchTable matchHistory={matchHistory} players={players} />,
     };
 
     return (
         <>
             {/* Only the active page renders, others are hidden */}
-            <div className="bg-gray-50" style={{ paddingBottom: 100 }}>
+            <div className="bg-gradient-to-br from-red-50 to-white" style={{ paddingBottom: 100 }}>
                 {pages[active]}
             </div>
 

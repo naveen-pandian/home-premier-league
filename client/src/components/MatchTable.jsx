@@ -39,11 +39,11 @@ function MatchTable({ matchHistory, players }) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-white px-4 py-6">
 
       {/* Title */}
       <h2 className="text-center text-3xl font-extrabold tracking-widest uppercase text-gray-700 mb-6">
-        Match <span className="text-yellow-500">History</span>
+        Match <span className="text-red-500">History</span>
       </h2>
 
       {!matchHistory?.length ? (

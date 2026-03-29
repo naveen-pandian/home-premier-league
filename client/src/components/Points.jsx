@@ -67,7 +67,7 @@ export default function Points({ matchHistory, players }) {
   }, [])
 
   return (
-    <div style={{ background: '#ffffff', minHeight: '100vh', fontFamily: "'DM Sans', sans-serif", color: '#000' }}>
+    <div className="bg-gradient-to-br from-red-50 to-white" style={{ minHeight: '100vh', fontFamily: "'DM Sans', sans-serif", color: '#000' }}>
       <div style={{ maxWidth: 420, margin: '0 auto', padding: '28px 18px 40px' }}>
 
         {/* Header */}
@@ -83,9 +83,9 @@ export default function Points({ matchHistory, players }) {
               letterSpacing: 1,
               background: 'linear-gradient(135deg, #000000 20%, rgba(73, 73, 73, 0.5))',
               WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+             
             }}>
-              Home Premier<br />League
+              <span style={{ WebkitTextFillColor: 'transparent'}}>Home Premier</span><br /><span className="text-red-500">League</span>
             </div>
           </div>
           <div style={{ background: 'rgba(0,0,0,0.06)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 20, padding: '6px 12px', fontSize: 11, color: 'rgba(0,0,0,0.35)', fontWeight: 500 }}>
@@ -113,7 +113,7 @@ export default function Points({ matchHistory, players }) {
                 <div style={{ fontSize: 11, fontWeight: 600, color: 'rgba(0,0,0,0.8)', marginBottom: 4, textAlign: 'center' }}>
                   {p.name.split(' ')[0]}
                 </div>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: cl === 'first' ? 18 : 15, color: cl === 'first' ? '#FFD700' : 'rgba(0,0,0,0.5)', marginBottom: 6 }}>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: cl === 'first' ? 18 : 15, color: ringColors[i], marginBottom: 6 }}>
                   {Math.round(p.total).toLocaleString()}
                 </div>
                 <div style={{ width: '100%', height: blockH, borderRadius: '10px 10px 0 0', background: podGradients[p.color], border: `0.5px solid ${p.hex}55`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

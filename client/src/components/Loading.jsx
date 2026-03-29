@@ -48,7 +48,7 @@ export default function Loading() {
 
       {/* Full mobile-screen, light mode */}
       <div
-        className="flex flex-col items-center justify-center gap-6 bg-white"
+        className="flex flex-col items-center justify-center gap-6 bg-gradient-to-br from-red-50 to-white"
         style={{ minHeight: "100svh" }}
       >
 
