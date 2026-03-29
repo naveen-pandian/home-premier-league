@@ -9,7 +9,7 @@ const port = 3000;
 
 app.use(cors());
 
-mongoose.connect('mongodb+srv://naveenpandianp2:Naveen%4029@cluster0.bul8bxu.mongodb.net/portfolio_data?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://naveenpandianp2:Naveen%4029@cluster0.bul8bxu.mongodb.net/game_data?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log('Connected to MongoDb Atlas');
 })
@@ -17,25 +17,25 @@ mongoose.connect('mongodb+srv://naveenpandianp2:Naveen%4029@cluster0.bul8bxu.mon
     console.log('Error connection : ',error);
 }); 
 
-const userSchema = new mongoose.Schema(
+const hplSchema = new mongoose.Schema(
 {
-    user : {}
+    hpl : {}
 }
 );
 
-const User = mongoose.model('user',userSchema);
+const hpl_data = mongoose.model('home_premier_league',hplSchema);
 
 
 //Routes
 app.get('/',(req,res)=>{
     res.send('Hello MongoDB Atlas! and vercel! ');
 })
-app.get('/api/portfolio_data',async(req,res)=>{
-    const users = await User.find();
-    res.json(users);
+app.get('/api/hpl_data',async(req,res)=>{
+    const hpl = await hpl_data.find();
+    res.json(hpl);
 })
 
 //Start the server
 app.listen(port,()=>{
-    console.log('Server is running on port ${port}');
+    console.log(`Server is running on port ${port}`);
 });
