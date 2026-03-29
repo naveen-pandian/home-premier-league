@@ -1,0 +1,328 @@
+https://drive.google.com/thumbnail?id=1o3nm9qkUGOxneKhcJzMnp44mpEIER4gQ -- angular
+https://drive.google.com/thumbnail?id=1DfIiK7IUwM3sW3PKCTp8bZoC0zuLzdMb -- asp
+https://drive.google.com/thumbnail?id=1Hap4M544TTChu0LbQIuCtsle_x-3d9MU --c
+https://drive.google.com/thumbnail?id=15t5iUosi32OjdkDfh_yJMcquiJU_VQ-p --c++
+https://drive.google.com/thumbnail?id=1GeE1dTcmwjXD15qrXDE-QmufquGQHfm1 --c#
+https://drive.google.com/thumbnail?id=1fWAByZxM0RQ6kJg2jPFid4L-igzdgV_d --css
+https://drive.google.com/thumbnail?id=1fTY0RLrXMmtdgAPn-3fMNdfqA0sFHDr5 --dotnet
+https://drive.google.com/thumbnail?id=1FbDbkJV6SsJpOcc5y8oyOumCYilLQmdq --ex
+https://drive.google.com/thumbnail?id=1XSpjvsl9wvkUDdMyrTq5J18aUSPAzL5A --html
+https://drive.google.com/thumbnail?id=1woXMoVHv4vfPymYdB7e-ql-miDT8EOPw --java
+https://drive.google.com/thumbnail?id=1RyZJ6PG7veU-YOgmwyB-Jr-0AYDHXEQO --jquery
+https://drive.google.com/thumbnail?id=13_jUaOZAidiouS3Z0j1c2Gqw8J8LneRQ --js
+https://drive.google.com/thumbnail?id=15fwfOyNUI5nJVUGLeRhAsNCOF2kabP-v  --mangodb
+https://drive.google.com/thumbnail?id=1rGYxoEwnQu9ixaDXT5NPif5kqoqpnoUp  --mysql
+https://drive.google.com/thumbnail?id=19lJqSrXWPhgfaD91fHgrqSwbMRRTX6Dp  --nodejs
+
+https://drive.google.com/thumbnail?id=1gxM2dnVjTobAtmnbPUvnp4-l-JMnSUdy  --npfront
+https://drive.google.com/thumbnail?id=1v6qfOxRc0kFZxYZ-fvXAOPuT_cxbPcvn  --npside
+
+https://drive.google.com/thumbnail?id=1jQMFn57khOSmjGX5DCRVoOZaZttUT871  --p1
+https://drive.google.com/thumbnail?id=1eAAoJgThU1ADxDUrzf-naAIYPhpiVAux --p2
+https://drive.google.com/thumbnail?id=1gTN9bGGjY-LGvihlMbsZl-NKEjZjkJdG --p3
+https://drive.google.com/thumbnail?id=15ahJ_8O6mQ0nuMgwWSoLTFyhkeeHV5dY --p4
+https://drive.google.com/thumbnail?id=1jZe8FtfmE5jGNGP3kHVh9FbqczX1b9b8 --p5
+https://drive.google.com/thumbnail?id=1tatqh3Vesi6Od5Mhfo5t8z-OtnRB6VRu --p6
+
+https://drive.google.com/thumbnail?id=1iP894nf-HbzYfdTyAa-D-pcFlx-QCDZR --python
+https://drive.google.com/thumbnail?id=17b-ju6einQm7Eub1zNTPsj-EJ9ZIs4iT  --react
+https://drive.google.com/thumbnail?id=1_pMRE7I-Xp1tVUhZi-qb3HSE5DBw8PHB  --spring boot
+https://drive.google.com/thumbnail?id=14BO9yDdRT3wFPx3LKRFMoNA2oZcT8eQa  --mssqlserver
+https://drive.google.com/thumbnail?id=1NL9OYGZ---orvu3wifzf0RSoIw6VMqnz  --tailwindcss
+https://drive.google.com/thumbnail?id=1sEpLPH4lVMWa8AiHEwATMdl6NYnQP5C1  --vite
+https://drive.google.com/thumbnail?id=1rLc-aJExWO5SoFgkkfU-dHkte4sG-g7B --vercel
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{
+  "user": {
+    "about": {
+      "name": "naveen pandian",
+      "title": "full stack developer",
+      "subtitle": "I develop web applications, quick learner and attentive listener",
+      "image1": "",
+      "image2": "",
+      "description": "I seek challenging oppertunities where i can fully use my skills for the success of the organization. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively."
+    },
+    "projects": [
+      {
+        "number": "1",
+        "name": "University Admit Eligibility Predictor",
+        "duration": "Aug 2022 - Nov 2022",
+        "techStack": ["Python","Flask","DataScience","Jupyter","TeamWork","TeamLeaderShip"],
+        "image": "",
+        "live": "",
+        "demo":"https://www.youtube.com/watch?v=ycXq6rSgi_o",
+        "source": "",
+        "description": "A Web Application Under DataScience Concept used to predict the Outcomes for Admission."
+      },
+      {
+        "number": "2",
+        "name": "Spam Detection",
+        "duration": "Jan 2023 - Mar 2023",
+        "techStack": ["Python","Flask","DataScience","MySQL","Jupyter","TeamWork","TeamLeaderShip"],
+        "image": "",
+        "live": "",
+        "demo":"https://www.youtube.com/watch?v=_C0PV_STJFI",
+        "source": "https://github.com/naveen-pandian/Spam-Detection",
+        "description": "A FullStack Web Application Under ML Concept used to filter the spam mails and unsecure Url."
+      },
+      {
+        "number": "3",
+        "name": "PortFolio Website",
+        "duration": "Oct 2023",
+        "techStack": ["Angular16","GitHub","Git","TypeScript","Css","Html"],
+        "image": "",
+        "live": "https://naveen-pandian.github.io/naveen-pandian-portfolio/",
+        "demo":"",
+        "source": "https://github.com/naveen-pandian/naveen-pandian-portfolio",
+        "description": "An Angular Web Application Which is live on github pages."
+      },
+      {
+        "number": "4",
+        "name": "Book Your Fav Application",
+        "duration": "Jan 2024 - Feb 2024",
+        "techStack": ["ASP.NET MVC","DotNetFramework","Razors Html","MS SQL Server","Spring MVC","C#"],
+        "image": "",
+        "live": "",
+        "demo":"https://www.youtube.com/watch?v=41e5DfvchBU",
+        "source": "https://github.com/naveen-pandian/Book_Your_Fav_Application",
+        "description": "A DotNet Web Application which consists of Dashboard, Admin and Users Pages used to Update, book and manage profiles."
+      },
+      {
+        "number": "5",
+        "name": "CURD Application",
+        "duration": "Feb 2024 - Mar 2024",
+        "techStack": ["Reactjs","Spring Boot","Core Java","MySQL","Spring MVC","Axios","Javascript","Css","Html"],
+        "image": "",
+        "live": "",
+        "demo":"https://www.youtube.com/watch?v=bIiS516vMrE",
+        "source": "https://github.com/naveen-pandian/CRUD-Application",
+        "description": "A Simple FullStack Web Application on REST Api Concept used to perform CRUD operation."
+      },
+      {
+        "number": "6",
+        "name": "ThePortfolyo Assignment",
+        "duration": "Mar 2024 - Apr 2024",
+        "techStack": ["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],
+        "image": "",
+        "live": "https://naveen-pandian.github.io/ThePortfoliyo-assignment/",
+        "demo":"",
+        "source": "https://github.com/naveen-pandian/ThePortfoliyo-assignment",
+        "description": "A Portfolio website connect with Api assignment given by thePortfolyo Company."
+      },
+       {
+        "number": "7",
+        "name": "PortFolyo Intern Assignment #1",
+        "duration": "Apr 2024 - Apr 2024",
+       "techStack": ["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],
+        "image": "",
+        "live": "https://naveen-pandian.github.io/portfolyo-intern-assignment-1/",
+         "demo":"",
+        "source": "https://github.com/naveen-pandian/portfolyo-intern-assignment-1",
+        "description": "A Portfolio wbsite connect with Api as a intern assignment given by thePortfolyo Company."
+      }
+    ],
+    "skills": [
+      {
+        "language": "C",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "Cpp",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "C#",
+        "image": "",
+        "percentage": "70"
+      },
+      {
+        "language": "Java",
+        "image": "",
+        "percentage": "70"
+      },
+      {
+        "language": "Python",
+        "image": "",
+        "percentage": "80"
+      },
+      {
+        "language": "MySql",
+        "image": "",
+        "percentage": "70"
+      },
+      {
+        "language": "msSql",
+        "image": "",
+        "percentage": "70"
+      },
+      {
+        "language": "mangoDb",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "dotnet",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "asp",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "tailwindcss",
+        "image": "",
+        "percentage": "90"
+      },
+      {
+        "language": "jquery",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "spring boot",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "vercel",
+        "image": "",
+        "percentage": "90"
+      },
+      {
+        "language": "vite",
+        "image": "",
+        "percentage": "80"
+      },
+      {
+        "language": "angularjs",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "reactjs",
+        "image": "",
+        "percentage": "90"
+      },
+       {
+        "language": "nodejs",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "expressjs",
+        "image": "",
+        "percentage": "60"
+      },
+      {
+        "language": "javascript",
+        "image": "",
+        "percentage": "80"
+      },
+      {
+        "language": "css",
+        "image": "",
+        "percentage": "90"
+      },
+      {
+        "language": "html",
+        "image": "",
+        "percentage": "90"
+      }
+    ],
+    "timeline": [
+      {
+        "education": true,
+        "company": "Nandha College Of Technology",
+        "duration": "2019 - 2023",
+        "title": "B.E. Computer Science and Engineering.,",
+        "location": "Erode, TamilNadu, India",
+        "grade": "89.7",
+        "desc":"During My UG , I honor as The Best Outgoing Student Award ( batch 2019 - 2023 )."
+      },
+      {
+        "education": true,
+        "company": "John Dewey Matric Hr Sec School",
+        "duration": "Jun 2017 - Mar 2019",
+        "title": "HSC, Mathematics and Computer Science",
+        "location": "Villupuram, TamilNadu, India",
+        "grade": "86.33",
+        "desc":"During My Higher Secondary, I am a chess player."
+      },
+      {
+        "education": true,
+        "company": "John Dewey Matric Hr Sec School",
+        "duration": "Jun 2016 - Mar 2017",
+        "title": "SSLC",
+        "location": "Villupuram, TamilNadu, India",
+        "grade": "97.6",
+        "desc":"During My SSLC, I am a chess player and a artist(painting)."
+      },
+      {
+        "education": false,
+        "company": "ThePortfolyo",
+        "duration": "Mar 2024 - May 2024",
+        "title": "React Developer - intern",
+        "location": "Remote",
+        "desc":"This is the virtual intership job offer"
+      },
+      {
+        "education": false,
+        "company": "Accenture",
+        "duration": "Dec 2023 - Dec 2023",
+        "title": "Data Analyst - intern",
+        "location": "Remote",
+        "desc":"This is the virtual internship program"
+      },
+      {
+        "education": false,
+        "company": "Besant Technologies",
+        "duration": "Sep 2023 - Oct 2023",
+        "title": "Dotnet Trainee",
+        "location": "Remote",
+        "desc":"This is the online course and Training Program."
+      }
+    ],
+    "contact": {
+      "location": "Erode, TamilNadu, India",
+      "mailId": "naveenpandianp@gmail.com",
+      "phoneNumber": "+91 6382710359"
+    },
+    "socials": [
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/@naveen-pandian/",
+        "image": ""
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/naveen.pandian.3192/",
+        "image": ""
+      },
+      {
+        "name": "linkedIn",
+        "url": "https://www.linkedin.com/in/naveen-pandian-p-111ab8193/",
+        "image": ""
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/mr_little_np/",
+        "image": ""
+      },
+      { "name": "github",
+        "url": "https://github.com/naveen-pandian", 
+        "image": ""
+      }
+    ]
+  }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+{"_id":{"$oid":"6641c8a9bfb93b8ed68658d5"},"user":{"about":{"name":"naveen pandian","title":"full stack developer","subtitle":"I develop web applications, quick learner and attentive listener","image1":"https://drive.google.com/thumbnail?id=1v6qfOxRc0kFZxYZ-fvXAOPuT_cxbPcvn","image2":"https://drive.google.com/thumbnail?id=1gxM2dnVjTobAtmnbPUvnp4-l-JMnSUdy","description":"I seek challenging oppertunities where i can fully use my skills for the success of the organization. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively."},"projects":[{"number":"1","name":"University Admit Eligibility Predictor","duration":"Aug 2022 - Nov 2022","techStack":["Python","Flask","DataScience","Jupyter","TeamWork","TeamLeaderShip"],"image":"https://drive.google.com/thumbnail?id=1jQMFn57khOSmjGX5DCRVoOZaZttUT871","live":"","demo":"https://www.youtube.com/watch?v=ycXq6rSgi_o","source":"","description":"A Web Application Under DataScience Concept used to predict the Outcomes for Admission."},{"number":"2","name":"Spam Detection","duration":"Jan 2023 - Mar 2023","techStack":["Python","Flask","DataScience","MySQL","Jupyter","TeamWork","TeamLeaderShip"],"image":"https://drive.google.com/thumbnail?id=1eAAoJgThU1ADxDUrzf-naAIYPhpiVAux","live":"","demo":"https://www.youtube.com/watch?v=_C0PV_STJFI","source":"https://github.com/naveen-pandian/Spam-Detection","description":"A FullStack Web Application Under ML Concept used to filter the spam mails and unsecure Url."},{"number":"3","name":"PortFolio Website","duration":"Oct 2023","techStack":["Angular16","GitHub","Git","TypeScript","Css","Html"],"image":"https://drive.google.com/thumbnail?id=1gTN9bGGjY-LGvihlMbsZl-NKEjZjkJdG","live":"https://naveen-pandian.github.io/naveen-pandian-portfolio/","demo":"","source":"https://github.com/naveen-pandian/naveen-pandian-portfolio","description":"An Angular Web Application Which is live on github pages."},{"number":"4","name":"Book Your Fav Application","duration":"Jan 2024 - Feb 2024","techStack":["ASP.NET MVC","DotNetFramework","Razors Html","MS SQL Server","Spring MVC","C#"],"image":"https://drive.google.com/thumbnail?id=15ahJ_8O6mQ0nuMgwWSoLTFyhkeeHV5dY","live":"","demo":"https://www.youtube.com/watch?v=41e5DfvchBU","source":"https://github.com/naveen-pandian/Book_Your_Fav_Application","description":"A DotNet Web Application which consists of Dashboard, Admin and Users Pages used to Update, book and manage profiles."},{"number":"5","name":"CURD Application","duration":"Feb 2024 - Mar 2024","techStack":["Reactjs","Spring Boot","Core Java","MySQL","Spring MVC","Axios","Javascript","Css","Html"],"image":"https://drive.google.com/thumbnail?id=1jZe8FtfmE5jGNGP3kHVh9FbqczX1b9b8","live":"","demo":"https://www.youtube.com/watch?v=bIiS516vMrE","source":"https://github.com/naveen-pandian/CRUD-Application","description":"A Simple FullStack Web Application on REST Api Concept used to perform CRUD operation."},{"number":"6","name":"ThePortfolyo Assignment","duration":"Mar 2024 - Apr 2024","techStack":["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],"image":"https://drive.google.com/thumbnail?id=1tatqh3Vesi6Od5Mhfo5t8z-OtnRB6VRu","live":"https://naveen-pandian.github.io/ThePortfoliyo-assignment/","demo":"","source":"https://github.com/naveen-pandian/ThePortfoliyo-assignment","description":"A Portfolio website connect with Api assignment given by thePortfolyo Company."},{"number":"7","name":"PortFolyo Intern Assignment #1","duration":"Apr 2024 - Apr 2024","techStack":["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],"image":"https://drive.google.com/thumbnail?id=1tatqh3Vesi6Od5Mhfo5t8z-OtnRB6VRu","live":"https://naveen-pandian.github.io/portfolyo-intern-assignment-1/","demo":"","source":"https://github.com/naveen-pandian/portfolyo-intern-assignment-1","description":"A Portfolio wbsite connect with Api as a intern assignment given by thePortfolyo Company."}],"skills":[{"language":"C","image":"https://drive.google.com/thumbnail?id=1Hap4M544TTChu0LbQIuCtsle_x-3d9MU","percentage":"60"},{"language":"Cpp","image":"https://drive.google.com/thumbnail?id=15t5iUosi32OjdkDfh_yJMcquiJU_VQ-p","percentage":"60"},{"language":"C#","image":"https://drive.google.com/thumbnail?id=1GeE1dTcmwjXD15qrXDE-QmufquGQHfm1","percentage":"70"},{"language":"Java","image":"https://drive.google.com/thumbnail?id=1woXMoVHv4vfPymYdB7e-ql-miDT8EOPw","percentage":"70"},{"language":"Python","image":"https://drive.google.com/thumbnail?id=1iP894nf-HbzYfdTyAa-D-pcFlx-QCDZR","percentage":"80"},{"language":"MySql","image":"https://drive.google.com/thumbnail?id=1rGYxoEwnQu9ixaDXT5NPif5kqoqpnoUp","percentage":"70"},{"language":"msSql","image":"https://drive.google.com/thumbnail?id=14BO9yDdRT3wFPx3LKRFMoNA2oZcT8eQa","percentage":"70"},{"language":"mangoDb","image":"https://drive.google.com/thumbnail?id=15fwfOyNUI5nJVUGLeRhAsNCOF2kabP-v","percentage":"60"},{"language":"dotnet","image":"https://drive.google.com/thumbnail?id=1fTY0RLrXMmtdgAPn-3fMNdfqA0sFHDr5","percentage":"60"},{"language":"asp","image":"https://drive.google.com/thumbnail?id=1DfIiK7IUwM3sW3PKCTp8bZoC0zuLzdMb","percentage":"60"},{"language":"tailwindcss","image":"https://drive.google.com/thumbnail?id=1NL9OYGZ---orvu3wifzf0RSoIw6VMqnz","percentage":"90"},{"language":"jquery","image":"https://drive.google.com/thumbnail?id=1RyZJ6PG7veU-YOgmwyB-Jr-0AYDHXEQO","percentage":"60"},{"language":"spring boot","image":"https://drive.google.com/thumbnail?id=1_pMRE7I-Xp1tVUhZi-qb3HSE5DBw8PHB","percentage":"60"},{"language":"vercel","image":"https://drive.google.com/thumbnail?id=1rLc-aJExWO5SoFgkkfU-dHkte4sG-g7B","percentage":"90"},{"language":"vite","image":"https://drive.google.com/thumbnail?id=1sEpLPH4lVMWa8AiHEwATMdl6NYnQP5C1","percentage":"80"},{"language":"angularjs","image":"https://drive.google.com/thumbnail?id=1o3nm9qkUGOxneKhcJzMnp44mpEIER4gQ","percentage":"60"},{"language":"reactjs","image":"https://drive.google.com/thumbnail?id=17b-ju6einQm7Eub1zNTPsj-EJ9ZIs4iT","percentage":"90"},{"language":"nodejs","image":"https://drive.google.com/thumbnail?id=19lJqSrXWPhgfaD91fHgrqSwbMRRTX6Dp","percentage":"60"},{"language":"expressjs","image":"https://drive.google.com/thumbnail?id=1FbDbkJV6SsJpOcc5y8oyOumCYilLQmdq","percentage":"60"},{"language":"javascript","image":"https://drive.google.com/thumbnail?id=13_jUaOZAidiouS3Z0j1c2Gqw8J8LneRQ","percentage":"80"},{"language":"css","image":"https://drive.google.com/thumbnail?id=1fWAByZxM0RQ6kJg2jPFid4L-igzdgV_d","percentage":"90"},{"language":"html","image":"https://drive.google.com/thumbnail?id=1XSpjvsl9wvkUDdMyrTq5J18aUSPAzL5A","percentage":"90"}],"timeline":[{"education":true,"company":"Nandha College Of Technology","duration":"2019 - 2023","title":"B.E. Computer Science and Engineering.,","location":"Erode, TamilNadu, India","grade":"89.7","desc":"During My UG , I honor as The Best Outgoing Student Award ( batch 2019 - 2023 )."},{"education":true,"company":"John Dewey Matric Hr Sec School","duration":"Jun 2017 - Mar 2019","title":"HSC, Mathematics and Computer Science","location":"Villupuram, TamilNadu, India","grade":"86.33","desc":"During My Higher Secondary, I am a chess player."},{"education":true,"company":"John Dewey Matric Hr Sec School","duration":"Jun 2016 - Mar 2017","title":"SSLC","location":"Villupuram, TamilNadu, India","grade":"97.6","desc":"During My SSLC, I am a chess player and a artist(painting)."},{"education":false,"company":"ThePortfolyo","duration":"Mar 2024 - May 2024","title":"React Developer - intern","location":"Remote","desc":"This is the virtual intership job offer"},{"education":false,"company":"Accenture","duration":"Dec 2023 - Dec 2023","title":"Data Analyst - intern","location":"Remote","desc":"This is the virtual internship program"},{"education":false,"company":"Besant Technologies","duration":"Sep 2023 - Oct 2023","title":"Dotnet Trainee","location":"Remote","desc":"This is the online course and Training Program."}],"contact":{"location":"Erode, TamilNadu, India","mailId":"naveenpandianp@gmail.com","phoneNumber":"+91 6382710359"},"socials":[{"name":"youtube","url":"https://www.youtube.com/@naveen-pandian/","image":""},{"name":"facebook","url":"https://www.facebook.com/naveen.pandian.3192/","image":""},{"name":"linkedIn","url":"https://www.linkedin.com/in/naveen-pandian-p-111ab8193/","image":""},{"name":"instagram","url":"https://www.instagram.com/mr_little_np/","image":""},{"name":"github","url":"https://github.com/naveen-pandian","image":""}]}}
+

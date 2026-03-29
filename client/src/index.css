@@ -1,0 +1,594 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    *{
+        @apply m-0 px-0 box-border font-['Poppins',sans-serif]
+    }
+    :root{
+        --clr:#ff359b;
+        --clr1:#00d2ff;
+        --c1r2:#fffd87;
+    
+    }
+   
+    .navigation{
+      @apply fixed top-0 left-0 w-36 h-screen bg-gray-950 justify-center items-center text-2xl
+             z-10     
+    }
+    .navigation ul{
+      @apply    w-[350]
+    }
+    .navigation ul li{
+      @apply relative list-none w-[70px] h-[70px] z-[1]
+    }
+    .navigation ul li a {
+      @apply relative  w-full text-center font-medium 
+    }
+    .navigation ul li a .icon{
+      @apply relative inline-block leading-[75px] text-[1.5em] text-center duration-[0.5s]
+            translate-x-[45px] text-gray-600 hover:text-[var(--clr1)]
+    }
+    .navigation ul li.active a .icon{
+      @apply translate-x-[127px] text-black
+    }
+    .navigation ul li a .text{
+      @apply absolute top-0 font-extrabold text-[0.74em] tracking-wider duration-[0.5s] opacity-0
+             translate-x-[25px]
+    }
+    .navigation ul li.active a .text{
+      @apply opacity-100 -translate-x-[30px] text-[var(--clr1)]
+    
+    }   
+    .indicator{
+      @apply absolute top-0 left-[77%]  w-[70px] h-[70px] bg-[var(--clr1)] rounded-[50%] border-[6px] border-solid border-[#ff359b] shadow-inner shadow-black
+    }
+    .indicator::before{
+      @apply content-[''] absolute left-[15%] top-[-22px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[10px_1px_0_0_#ff359b]
+    }
+    .indicator::after{
+      @apply content-[''] absolute left-[15%] bottom-[-22px] w-[20px] h-[20px] bg-transparent rounded-tr-[20px] shadow-[10px_-1px_0_0_#ff359b]
+    }
+    .navigation ul li:nth-child(1).active ~ .indicator{
+      @apply translate-y-[calc(70px_*_0)]
+    }
+    .navigation ul li:nth-child(2).active ~ .indicator{
+      @apply translate-y-[calc(70px_*_1)]
+    }
+    .navigation ul li:nth-child(3).active ~ .indicator{
+      @apply translate-y-[calc(70px_*_2)]
+    }
+    .navigation ul li:nth-child(4).active ~ .indicator{
+      @apply translate-y-[calc(70px_*_3)]
+    }
+    .navigation ul li:nth-child(5).active ~ .indicator{
+      @apply translate-y-[calc(70px_*_4)]
+    }
+    
+    
+    /* -------------------  For mobile or small responsive ---------------------------------------------------------------- */
+    
+    .mobile-navigation{
+      @apply fixed top-0 left-0 w-screen h-[70px] bg-gray-950 flex justify-center items-center  text-sm font-extrabold
+             z-10
+    }
+    .mobile-navigation ul{
+      @apply flex w-[350]
+    }
+    .mobile-navigation ul li{
+      @apply relative list-none w-[70px] h-[70px] z-[1]
+    }
+    .mobile-navigation ul li a {
+      @apply relative flex justify-center items-center flex-col w-full text-center 
+    }
+    .mobile-navigation ul li a .icon{
+      @apply relative leading-[75px] text-[1.5em] text-center duration-[0.5s] text-gray-600
+            hover:text-[var(--clr1)]
+    }
+    .mobile-navigation ul li.active2 a .icon{
+      @apply translate-y-[32px]  text-black
+    }
+    .mobile-navigation ul li a .text{
+      @apply absolute font-extrabold text-[0.74em] tracking-wider duration-[0.5s] opacity-0
+             translate-y-[40px]   
+    }
+    .mobile-navigation ul li.active2 a .text{
+      @apply opacity-100 -translate-y-[20px] text-[var(--clr1)]
+    
+    }   
+    .mobile-indicator{
+      @apply absolute top-[50%] w-[70px] h-[70px] bg-[var(--clr1)] rounded-[50%] border-[6px] border-solid border-[--clr] shadow-inner shadow-black
+    }
+    .mobile-indicator::before{
+      @apply content-[''] absolute bottom-[50%] left-[-22px] w-[20px] h-[20px] bg-transparent rounded-br-[20px] shadow-[1px_10px_0_0_var(--clr)]
+    }
+    .mobile-indicator::after{
+      @apply content-[''] absolute bottom-[50%] right-[-22px] w-[20px] h-[20px] bg-transparent rounded-bl-[20px] shadow-[-1px_10px_0_0_var(--clr)]
+    }
+    
+    .mobile-navigation ul li:nth-child(1).active2 ~ .mobile-indicator{
+      @apply translate-x-[calc(70px_*_0)]
+    }
+    .mobile-navigation ul li:nth-child(2).active2 ~ .mobile-indicator{
+      @apply translate-x-[calc(70px_*_1)]
+    }
+    .mobile-navigation ul li:nth-child(3).active2 ~ .mobile-indicator{
+      @apply translate-x-[calc(70px_*_2)]
+    }
+    .mobile-navigation ul li:nth-child(4).active2 ~ .mobile-indicator{
+      @apply translate-x-[calc(70px_*_3)]
+    }
+    .mobile-navigation ul li:nth-child(5).active2 ~ .mobile-indicator{
+      @apply translate-x-[calc(70px_*_4)]
+    }
+    
+    /* --------------------------- backImage ------------------------------- */   
+    
+    .backimage{
+      @apply fixed top-0 left-0 overflow-hidden w-full h-screen flex bg-gradient-to-b from-[#ff4f8b] to-[#dff1ff] z-[-100]
+    }
+    .backimage .color {
+      @apply absolute blur-[150px]
+    }
+    .backimage .color:nth-child(1){
+       @apply bg-[var(--clr)] w-screen sm:h-screen h-[400px] top-0
+    }
+    .backimage .color:nth-child(2){
+      @apply bg-[var(--clr1)] w-[500px] h-[500px] bottom-[-150px] right-0
+    }
+    .backimage .color:nth-child(3){
+      @apply bg-[#fffd87] w-[300px] h-[400px] sm:h-[100px] bottom-[-50px] right-0 
+    }
+
+
+    /* ---------------------------- box ----------------------------- */
+    
+    .box{
+        @apply relative bg-white/10 shadow-[0_25px_45px_rgba(0,0,0,0.1)]  border border-[rgba(255,255,255,0.5)] border-r-[rgba(255,255,255,0.2)] border-b-[rgba(255,255,255,0.2)] rounded-[10px]
+                p-[20px]
+    }
+   
+    .box .list{
+        @apply relative  flex bg-black/10    rounded-[10px] cursor-pointer duration-[0.5s]
+               overflow-hidden justify-start
+                  }
+  
+    .box .list:hover{
+        @apply  shadow-[-15px_30px_50px_rgba(0,0,0,0.5)] scale-[1.15]  z-[10]
+    }
+    .box .list .imgBx{
+        @apply relative w-[60px] h-[60px] rounded-[10px] overflow-hidden mr-[10px]
+    }
+    .box .list .imgBx img{
+        @apply absolute top-0 left-0 w-full h-full object-cover 
+    }
+    .box .list .content{
+        @apply flex flex-col justify-center text-white
+    }
+    
+   /*------------------------------- anime bounce ----------------------------------------------------------------------  */
+   .ball {
+    animation: floating 2.4s ease-in-out infinite;
+    
+     }
+  
+  @keyframes floating {
+    0% {
+      transform: translatey(0px);
+    }
+  
+    50% {
+      transform: translatey(-50px);
+    }
+  
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  .shadow {
+    background: #1f1f1f;
+    width: 300px;
+    height: 20px;
+    top: 90%;
+    left:-23px;
+    animation: shad 2.4s ease-in-out infinite;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  @keyframes shad {
+    0%,
+              100% {
+      transform: scale(0.6);
+      
+    }
+  
+    50% {
+      transform: scale(0.3);
+      filter: blur(5px);
+    }
+  }
+  
+  /* --------------------anime text----------------- */
+    
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 510px;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  .texttype {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid black; /* Cursor */
+    animation: typeAndDelete 8s steps(21) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+  
+  }
+
+  @keyframes mobile-typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 330px;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  .mobile-texttype {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid black; /* Cursor */
+    animation: mobile-typeAndDelete 8s steps(21) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+  
+  }
+
+  .hacker-loader {
+    position: relative;
+    background-color: #00d2ff;
+    padding: 1em;
+    overflow: hidden;
+    
+  }
+  
+  .loader-text {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .text-glitch {
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+  }
+
+  .text-no-glitch {
+    color: black;
+    font-family: monospace;
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-glitch::before,
+  .text-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00d2ff;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .text-glitch::before {
+    left: -0.1em;
+    text-shadow: 0.1em 0 #ff3596;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+  }
+  
+  .text-glitch::after {
+    left: 0.1em;
+    text-shadow: -0.1em 0 #fffd87;
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+  }
+  
+  
+
+  
+ 
+  
+  @keyframes glitch-effect {
+    0% {
+      clip: rect(42px, 9999px, 44px, 0);
+    }
+    5% {
+      clip: rect(12px, 9999px, 59px, 0);
+    }
+    10% {
+      clip: rect(48px, 9999px, 29px, 0);
+    }
+    15.0% {
+      clip: rect(42px, 9999px, 73px, 0);
+    }
+    20% {
+      clip: rect(63px, 9999px, 27px, 0);
+    }
+    25% {
+      clip: rect(34px, 9999px, 55px, 0);
+    }
+    30.0% {
+      clip: rect(86px, 9999px, 73px, 0);
+    }
+    35% {
+      clip: rect(20px, 9999px, 20px, 0);
+    }
+    40% {
+      clip: rect(26px, 9999px, 60px, 0);
+    }
+    45% {
+      clip: rect(25px, 9999px, 66px, 0);
+    }
+    50% {
+      clip: rect(57px, 9999px, 98px, 0);
+    }
+    55.0% {
+      clip: rect(5px, 9999px, 46px, 0);
+    }
+    60.0% {
+      clip: rect(82px, 9999px, 31px, 0);
+    }
+    65% {
+      clip: rect(54px, 9999px, 27px, 0);
+    }
+    70% {
+      clip: rect(28px, 9999px, 99px, 0);
+    }
+    75% {
+      clip: rect(45px, 9999px, 69px, 0);
+    }
+    80% {
+      clip: rect(23px, 9999px, 85px, 0);
+    }
+    85.0% {
+      clip: rect(54px, 9999px, 84px, 0);
+    }
+    90% {
+      clip: rect(45px, 9999px, 47px, 0);
+    }
+    95% {
+      clip: rect(37px, 9999px, 20px, 0);
+    }
+    100% {
+      clip: rect(4px, 9999px, 91px, 0);
+    }
+  }
+  
+ /* --------------------------------title --------------------- */
+ 
+ .loading-a {
+  width: fit-content;
+  font-family: monospace;
+  background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+  animation: okay 1s infinite alternate linear;
+}
+
+.loading-a::before {
+  content: "ABOUT";
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes okay {
+  100% {
+    background-position: left
+  }
+} 
+
+.loading-p {
+  width: fit-content;
+  font-family: monospace;
+  background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+  animation: okay 1s infinite alternate linear;
+}
+
+.loading-p::before {
+  content: "PROJECTS";
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.loading-c {
+  width: fit-content;
+  font-family: monospace;
+  background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+  animation: okay 1s infinite alternate linear;
+}
+
+.loading-c::before {
+  content: "CONTACT";
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.loading-s {
+  width: fit-content;
+  font-family: monospace;
+  background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+  animation: okay 1s infinite alternate linear;
+}
+
+.loading-s::before {
+  content: "SKILLS";
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ---------Butterfy ----------------------------------------- */
+
+
+
+.butterfly {
+  --sizeLoader: 80px;
+  --sizeLoaderHalf: calc(var(--sizeLoader) / 2);
+  --stepBtf: calc(var(--sizeLoader) / 10);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: var(--sizeLoader);
+  height: var(--sizeLoader);
+  background: radial-gradient(#f1f8,transparent 30%);
+}
+
+.butterfly:hover {
+  cursor: progress;
+}
+
+.butterfly[anim1] {
+  animation: anim1 0.3s alternate ease-in-out infinite;
+}
+
+.butterfly:not([anim1]) {
+  right: var(--sizeLoaderHalf);
+  transform-origin: left;
+  animation: moveAround 2s linear infinite;
+}
+
+.loader[showShadow] {
+  filter: drop-shadow(0 10px 10px #060606de);
+}
+
+.loader svg:nth-child(1) {
+  position: relative;
+  height: 100%;
+  left: 2%;
+  transform-origin: center right;
+  animation: wing 0.2s ease-in-out infinite;
+}
+
+.butterfly svg:nth-child(2) {
+  height: 50%;
+}
+
+.butterfly svg:nth-child(3) {
+  position: relative;
+  height: 100%;
+  left: -2%;
+  transform-origin: center left;
+  animation: wing 0.25s ease-in-out infinite;
+}
+
+@keyframes wing {
+  0% {
+    transform: rotateY(0deg);
+  }
+  
+  50% {
+    transform: rotateY(60deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes moveAround {
+  0% {
+    transform:translate(-100px,0px) rotateZ(45deg);
+  }
+  
+  100% {
+    transform:translate(-100px,0px) rotateZ(45deg);
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(var(--stepBtf));
+  }
+}
+
+
+
+
+/* -----------------------------loading terminal--------------------------- */
+   
+
+@keyframes cursor-blink{
+  0%,100%{
+    opacity:1;
+  }
+  50%{
+    opacity:0;
+  }
+}
+
+.cursor-blink{
+  border:2px solid white;
+  background-color: white;
+  animation:cursor-blink 1s step-start infinite;
+}
+
+/* -----------------------------background---------------------------- */
+
+.circle{
+  @apply fixed z-[-99] content-[''] 
+}
+.wcircle{
+  @apply fixed z-[-99] rounded-full backdrop-filter backdrop-blur-xl bg-white/30 shadow-xl  
+}
+
+
+
+
+}
+
+
+
+
