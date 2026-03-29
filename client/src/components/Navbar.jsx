@@ -37,30 +37,32 @@ const style = `
 
 const ITEMS = [
   {
-    id: "about", label: "About",
+    id: "Points", label: "Points",
     icon: (a, sz) => (
       <svg width={sz} height={sz} viewBox="0 0 24 24" fill="none"
         stroke={a ? "#dc2626" : "#c0c7d4"} strokeWidth={a ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>
     ),
   },
   {
-    id: "skills", label: "Skills",
+    id: "Amount", label: "Amount",
     icon: (a, sz) => (
       <svg width={sz} height={sz} viewBox="0 0 24 24" fill="none"
         stroke={a ? "#dc2626" : "#c0c7d4"} strokeWidth={a ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        <path d="M6 4h10" />
+        <path d="M6 8h10" />
+        <path d="M8 4c3 0 6 1.5 6 4s-3 4-6 4H6" />
+        <path d="M10 12l4 8" />
       </svg>
     ),
   },
-  // CENTER — home placeholder, rendered separately
   {
-    id: "projects", label: "Projects",
+    id: "Status", label: "Status",
     icon: (a, sz) => (
       <svg width={sz} height={sz} viewBox="0 0 24 24" fill="none"
         stroke={a ? "#dc2626" : "#c0c7d4"} strokeWidth={a ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+        <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
       </svg>
     ),
   },
@@ -69,7 +71,7 @@ const ITEMS = [
     icon: (a, sz) => (
       <svg width={sz} height={sz} viewBox="0 0 24 24" fill="none"
         stroke={a ? "#dc2626" : "#c0c7d4"} strokeWidth={a ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
       </svg>
     ),
   },
@@ -100,30 +102,27 @@ function NavItem({ item, isActive, onClick }) {
     }}>
       {ripples.map(rp => (
         <span key={rp.id} className="ripple-el" style={{
-          position:"absolute", borderRadius:"50%", width:36, height:36,
-          left:rp.x-18, top:rp.y-18, background:"rgba(220,38,38,0.12)", pointerEvents:"none",
-        }}/>
+          position: "absolute", borderRadius: "50%", width: 36, height: 36,
+          left: rp.x - 18, top: rp.y - 18, background: "rgba(220,38,38,0.12)", pointerEvents: "none",
+        }} />
       ))}
 
-      {/* Active pill */}
       {isActive && (
         <span style={{
-          position:"absolute", width:45, height:45,
-          background:"rgba(220,38,38,0.08)", borderRadius:99,
-          top:"50%", left:"50%", transform:"translate(-50%,-66%)", pointerEvents:"none",
-        }}/>
+          position: "absolute", width: 45, height: 45,
+          background: "rgba(220,38,38,0.08)", borderRadius: 99,
+          top: "50%", left: "50%", transform: "translate(-50%,-66%)", pointerEvents: "none",
+        }} />
       )}
 
-      {/* Icon — scales up when active */}
       <span
         key={`i-${animKey}-${isActive}`}
         className={isActive ? "icon-grow" : ""}
-        style={{ display:"flex", zIndex:1, transition:"transform 0.28s cubic-bezier(0.34,1.56,0.64,1)" }}
+        style={{ display: "flex", zIndex: 1, transition: "transform 0.28s cubic-bezier(0.34,1.56,0.64,1)" }}
       >
         {item.icon(isActive, iconSize)}
       </span>
 
-      {/* Label */}
       <span key={`l-${isActive}`} className={isActive ? "label-up" : ""} style={{
         fontSize: 10, fontWeight: isActive ? 700 : 500,
         color: isActive ? "#dc2626" : "#b0b7c3",
@@ -133,15 +132,6 @@ function NavItem({ item, isActive, onClick }) {
       }}>
         {item.label}
       </span>
-
-      {/* Glow dot */}
-      {/* {isActive && (
-        <span style={{
-          position:"absolute", bottom:8, left:"50%", transform:"translateX(-50%)",
-          width:4, height:4, borderRadius:"50%",
-          background:"#dc2626", boxShadow:"0 0 8px rgba(220,38,38,0.7)",
-        }}/>
-      )} */}
     </button>
   );
 }
@@ -157,27 +147,21 @@ function HomeButton({ isActive, onClick }) {
   };
 
   return (
-    <div style={{ position:"relative", display:"flex", flexDirection:"column", alignItems:"center", flex:1 }}>
-      {/* Notch dip in bar — purely decorative */}
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
       <div style={{
-        position:"absolute", top:"-100%", left:"50%", transform:"translateX(-50%)",
-        width:72, height:36,
-        background:"#fff",
-        borderRadius:"0 0 50px 50px",
-        pointerEvents:"none",
-      }}/>
+        position: "absolute", top: "-100%", left: "50%", transform: "translateX(-50%)",
+        width: 72, height: 36, background: "#fff",
+        borderRadius: "0 0 50px 50px", pointerEvents: "none",
+      }} />
 
-      {/* Floating circle button */}
       <button
         key={`home-${popKey}`}
         onClick={handleClick}
         aria-label="Home"
         className={popKey > 0 ? "home-pop" : ""}
         style={{
-          position:"absolute",
-          top: -28,
-          width: 56, height: 56,
-          borderRadius:"50%",
+          position: "absolute", top: -28,
+          width: 56, height: 56, borderRadius: "50%",
           background: isActive
             ? "radial-gradient(circle at 38% 35%, #f87171, #dc2626 60%, #991b1b)"
             : "radial-gradient(circle at 38% 35%, #fca5a5, #ef4444 60%, #b91c1c)",
@@ -185,110 +169,75 @@ function HomeButton({ isActive, onClick }) {
           boxShadow: isActive
             ? "0 6px 20px rgba(220,38,38,0.45), 0 2px 6px rgba(0,0,0,0.12)"
             : "0 4px 14px rgba(220,38,38,0.28), 0 2px 4px rgba(0,0,0,0.08)",
-          cursor:"pointer",
-          display:"flex", alignItems:"center", justifyContent:"center",
-          outline:"none",
-          WebkitTapHighlightColor:"transparent",
-          transition:"box-shadow 0.25s",
-          zIndex: 10,
+          cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+          outline: "none", WebkitTapHighlightColor: "transparent",
+          transition: "box-shadow 0.25s", zIndex: 10,
         }}
       >
-        {/* Ring pulse on tap */}
         <span key={`ring-${ringKey}`} className={ringKey > 0 ? "ring-pulse" : ""} style={{
-          position:"absolute", inset:0, borderRadius:"50%", pointerEvents:"none",
-        }}/>
+          position: "absolute", inset: 0, borderRadius: "50%", pointerEvents: "none",
+        }} />
 
-        {/* Home icon — bigger inside the circle */}
         <svg width={isActive ? 26 : 22} height={isActive ? 26 : 22} viewBox="0 0 24 24"
           fill="rgba(255,255,255,0.95)" stroke="rgba(255,255,255,0.95)"
           strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"
-          style={{ transition:"width 0.25s, height 0.25s" }}>
-          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
-          <path d="M9 21V12h6v9" fill="rgba(255,255,255,0.6)" stroke="none"/>
+          style={{ transition: "width 0.25s, height 0.25s" }}>
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" />
+          <path d="M9 21V12h6v9" fill="rgba(255,255,255,0.6)" stroke="none" />
         </svg>
       </button>
 
-      {/* Label below the circle, inside bar */}
       <span key={`hl-${isActive}`} className={isActive ? "label-up" : ""} style={{
-        position:"absolute",
-        bottom: 8,
-        fontSize: 10,
+        position: "absolute", bottom: 8, fontSize: 10,
         fontWeight: isActive ? 700 : 500,
         color: isActive ? "#dc2626" : "#b0b7c3",
-        lineHeight: 1,
-        letterSpacing: isActive ? "0.04em" : 0,
-        zIndex: 1,
+        lineHeight: 1, letterSpacing: isActive ? "0.04em" : 0, zIndex: 1,
       }}>
         Home
       </span>
 
-      {/* Glow dot */}
       {isActive && (
         <span style={{
-          position:"absolute", bottom:5, left:"50%", transform:"translateX(-50%)",
-          width:4, height:4, borderRadius:"50%",
-          background:"#dc2626", boxShadow:"0 0 8px rgba(220,38,38,0.7)",
-        }}/>
+          position: "absolute", bottom: 5, left: "50%", transform: "translateX(-50%)",
+          width: 4, height: 4, borderRadius: "50%",
+          background: "#dc2626", boxShadow: "0 0 8px rgba(220,38,38,0.7)",
+        }} />
       )}
     </div>
   );
 }
 
-export default function Navbar() {
-  const [active, setActive] = useState("home");
-
-  // Split items: 2 left, center home, 2 right
-  const left  = ITEMS.slice(0, 2);
+// ↓ Only change: accepts active + onTabChange as props instead of own useState
+export default function Navbar({ active, onTabChange }) {
+  const left = ITEMS.slice(0, 2);
   const right = ITEMS.slice(2);
 
   return (
     <>
       <style>{style}</style>
 
-      {/* Preview */}
-      <div style={{
-        minHeight:"100svh", background:"#fff",
-        display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center",
-        fontFamily:"'Outfit',sans-serif", paddingBottom:100,
-      }}>
-        <div style={{
-          width:52, height:52, borderRadius:"50%",
-          background:"radial-gradient(circle at 38% 35%, #f87171, #dc2626 60%, #991b1b)",
-          boxShadow:"0 8px 28px rgba(220,38,38,0.28)", marginBottom:18,
-        }}/>
-        <p style={{ color:"#dc2626", fontWeight:700, fontSize:"1.3rem", letterSpacing:"0.12em" }}>
-          {active.toUpperCase()}
-        </p>
-        <p style={{ color:"#d1d5db", fontSize:"0.78rem", marginTop:6, fontWeight:500 }}>tap the nav below</p>
-      </div>
-
-      {/* Nav bar */}
       <nav className="nav-root" style={{
-        position:"fixed", bottom:18, left:"50%", transform:"translateX(-50%)",
-        width:"calc(100% - 32px)", maxWidth:430, height:66,
-        background:"#fff", borderRadius:26,
-        display:"flex", alignItems:"center",
-        zIndex:100, overflow:"visible",
-        boxShadow:"0 2px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.10), 0 0 0 1px rgba(0,0,0,0.05)",
+        position: "fixed", bottom: 18, left: "50%", transform: "translateX(-50%)",
+        width: "calc(100% - 32px)", maxWidth: 430, height: 66,
+        background: "#fff", borderRadius: 26,
+        display: "flex", alignItems: "center",
+        zIndex: 100, overflow: "visible",
+        boxShadow: "0 2px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.10), 0 0 0 1px rgba(0,0,0,0.05)",
       }}>
-        {/* Red hairline top */}
         <span style={{
-          position:"absolute", top:0, left:"15%", width:"70%", height:2,
-          background:"linear-gradient(90deg,transparent,#dc2626 40%,#dc2626 60%,transparent)",
-          borderRadius:99, opacity:0.4, pointerEvents:"none",
-        }}/>
+          position: "absolute", top: 0, left: "15%", width: "70%", height: 2,
+          background: "linear-gradient(90deg,transparent,#dc2626 40%,#dc2626 60%,transparent)",
+          borderRadius: 99, opacity: 0.4, pointerEvents: "none",
+        }} />
 
-        {/* Left items */}
         {left.map(item => (
-          <NavItem key={item.id} item={item} isActive={active===item.id} onClick={setActive}/>
+          <NavItem key={item.id} item={item} isActive={active === item.id} onClick={onTabChange} />
         ))}
 
-        {/* Center Home */}
-        <HomeButton isActive={active==="home"} onClick={setActive}/>
+        <HomeButton isActive={active === "home"} onClick={onTabChange} />
 
-        {/* Right items */}
         {right.map(item => (
-          <NavItem key={item.id} item={item} isActive={active===item.id} onClick={setActive}/>
+          <NavItem key={item.id} item={item} isActive={active === item.id} onClick={onTabChange} />
         ))}
       </nav>
     </>
