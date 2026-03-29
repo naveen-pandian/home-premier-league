@@ -10,13 +10,9 @@ import Contact from '../components/Contact';
 import Loading from '../components/Loading';
 import Background from '../components/Background';
 
-function Home() {
-   
-    const navigate = useNavigate();
-    
- 
+const Home = () => {
 
-    const BASE_URL = 'https://personal-portfolio-kappa-jade.vercel.app/api/portfolio_data';
+    const BASE_URL = 'https://home-premier-league.vercel.app/api/hpl_data';
 
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -50,7 +46,8 @@ function Home() {
     return (
         
         <>
-            <Navbar/> 
+        <div> Pon Pandian</div>
+            {/* <Navbar/> 
             <Background />
             <div className=' sm:ml-[140px] sm:mt-[25px] mt-[100px] flex flex-col justify-center items-center p-4' > 
             <Hero user={user}/>
@@ -60,7 +57,7 @@ function Home() {
             <Skills skills={sortedFilteredSkills} />
             <Projects projects={sortedFilteredProject} />
              <Contact social={filteredSocialHandles} user={user}/>
-            </div>
+            </div> */}
    </>
     );
 }
