@@ -64,6 +64,7 @@ const Home = () => {
             <Projects projects={sortedFilteredProject} />
              <Contact social={filteredSocialHandles} user={user}/>
             </div> */}
+             <Navbar/> 
    </>
     );
 }
