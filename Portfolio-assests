@@ -34,288 +34,63 @@ https://drive.google.com/thumbnail?id=1rLc-aJExWO5SoFgkkfU-dHkte4sG-g7B --vercel
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 {
-  "user": {
+  "hpl": {
     "about": {
-      "name": "naveen pandian",
-      "title": "full stack developer",
-      "subtitle": "I develop web applications, quick learner and attentive listener",
-      "image1": "",
-      "image2": "",
-      "description": "I seek challenging oppertunities where i can fully use my skills for the success of the organization. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively."
+      "name": "Home Premier League",
+      "players": [
+        {
+          "player": "001",
+          "name": "Pon Pandian",
+          "image": "https://drive.google.com/file/d/1toQHFC2yPIvs6MMuHqKgtQNaaNC0qsfj/view?usp=drive_link",
+          "about": "Dominate the leaderboard."
+        },
+        {
+          "player": "002",
+          "name": "Naveen Pandian",
+          "image": "https://drive.google.com/file/d/1MXpxLpqiNSSka50sWu84OaOgTLVjhUUp/view?usp=drive_link",
+          "about": "Winners don’t follow trends, they create them."
+        },
+        {
+          "player": "003",
+          "name": "Varun Pandian",
+          "image": "https://drive.google.com/file/d/14burTgDq6HVuFuJM7REb3g9A03TMzBGW/view?usp=drive_link",
+          "about": "Your team, your rules, your glory."
+        },
+        {
+          "player": "004",
+          "name": "Pal Pandian",
+          "image": "https://drive.google.com/file/d/1m2C8Eu6z4Hp4tmazGmCPzRQ2uTUDeRhN/view?usp=drive_link",
+          "about": "Play the game before the game begins."
+        }
+      ]
     },
-    "projects": [
+    "matchHistory": [
       {
-        "number": "1",
-        "name": "University Admit Eligibility Predictor",
-        "duration": "Aug 2022 - Nov 2022",
-        "techStack": ["Python","Flask","DataScience","Jupyter","TeamWork","TeamLeaderShip"],
-        "image": "",
-        "live": "",
-        "demo":"https://www.youtube.com/watch?v=ycXq6rSgi_o",
-        "source": "",
-        "description": "A Web Application Under DataScience Concept used to predict the Outcomes for Admission."
-      },
-      {
-        "number": "2",
-        "name": "Spam Detection",
-        "duration": "Jan 2023 - Mar 2023",
-        "techStack": ["Python","Flask","DataScience","MySQL","Jupyter","TeamWork","TeamLeaderShip"],
-        "image": "",
-        "live": "",
-        "demo":"https://www.youtube.com/watch?v=_C0PV_STJFI",
-        "source": "https://github.com/naveen-pandian/Spam-Detection",
-        "description": "A FullStack Web Application Under ML Concept used to filter the spam mails and unsecure Url."
-      },
-      {
-        "number": "3",
-        "name": "PortFolio Website",
-        "duration": "Oct 2023",
-        "techStack": ["Angular16","GitHub","Git","TypeScript","Css","Html"],
-        "image": "",
-        "live": "https://naveen-pandian.github.io/naveen-pandian-portfolio/",
-        "demo":"",
-        "source": "https://github.com/naveen-pandian/naveen-pandian-portfolio",
-        "description": "An Angular Web Application Which is live on github pages."
-      },
-      {
-        "number": "4",
-        "name": "Book Your Fav Application",
-        "duration": "Jan 2024 - Feb 2024",
-        "techStack": ["ASP.NET MVC","DotNetFramework","Razors Html","MS SQL Server","Spring MVC","C#"],
-        "image": "",
-        "live": "",
-        "demo":"https://www.youtube.com/watch?v=41e5DfvchBU",
-        "source": "https://github.com/naveen-pandian/Book_Your_Fav_Application",
-        "description": "A DotNet Web Application which consists of Dashboard, Admin and Users Pages used to Update, book and manage profiles."
-      },
-      {
-        "number": "5",
-        "name": "CURD Application",
-        "duration": "Feb 2024 - Mar 2024",
-        "techStack": ["Reactjs","Spring Boot","Core Java","MySQL","Spring MVC","Axios","Javascript","Css","Html"],
-        "image": "",
-        "live": "",
-        "demo":"https://www.youtube.com/watch?v=bIiS516vMrE",
-        "source": "https://github.com/naveen-pandian/CRUD-Application",
-        "description": "A Simple FullStack Web Application on REST Api Concept used to perform CRUD operation."
-      },
-      {
-        "number": "6",
-        "name": "ThePortfolyo Assignment",
-        "duration": "Mar 2024 - Apr 2024",
-        "techStack": ["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],
-        "image": "",
-        "live": "https://naveen-pandian.github.io/ThePortfoliyo-assignment/",
-        "demo":"",
-        "source": "https://github.com/naveen-pandian/ThePortfoliyo-assignment",
-        "description": "A Portfolio website connect with Api assignment given by thePortfolyo Company."
-      },
-       {
-        "number": "7",
-        "name": "PortFolyo Intern Assignment #1",
-        "duration": "Apr 2024 - Apr 2024",
-       "techStack": ["Reactjs","Vite","TailwindCss","Javascript","Css","Html"],
-        "image": "",
-        "live": "https://naveen-pandian.github.io/portfolyo-intern-assignment-1/",
-         "demo":"",
-        "source": "https://github.com/naveen-pandian/portfolyo-intern-assignment-1",
-        "description": "A Portfolio wbsite connect with Api as a intern assignment given by thePortfolyo Company."
-      }
-    ],
-    "skills": [
-      {
-        "language": "C",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "Cpp",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "C#",
-        "image": "",
-        "percentage": "70"
-      },
-      {
-        "language": "Java",
-        "image": "",
-        "percentage": "70"
-      },
-      {
-        "language": "Python",
-        "image": "",
-        "percentage": "80"
-      },
-      {
-        "language": "MySql",
-        "image": "",
-        "percentage": "70"
-      },
-      {
-        "language": "msSql",
-        "image": "",
-        "percentage": "70"
-      },
-      {
-        "language": "mangoDb",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "dotnet",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "asp",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "tailwindcss",
-        "image": "",
-        "percentage": "90"
-      },
-      {
-        "language": "jquery",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "spring boot",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "vercel",
-        "image": "",
-        "percentage": "90"
-      },
-      {
-        "language": "vite",
-        "image": "",
-        "percentage": "80"
-      },
-      {
-        "language": "angularjs",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "reactjs",
-        "image": "",
-        "percentage": "90"
-      },
-       {
-        "language": "nodejs",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "expressjs",
-        "image": "",
-        "percentage": "60"
-      },
-      {
-        "language": "javascript",
-        "image": "",
-        "percentage": "80"
-      },
-      {
-        "language": "css",
-        "image": "",
-        "percentage": "90"
-      },
-      {
-        "language": "html",
-        "image": "",
-        "percentage": "90"
-      }
-    ],
-    "timeline": [
-      {
-        "education": true,
-        "company": "Nandha College Of Technology",
-        "duration": "2019 - 2023",
-        "title": "B.E. Computer Science and Engineering.,",
-        "location": "Erode, TamilNadu, India",
-        "grade": "89.7",
-        "desc":"During My UG , I honor as The Best Outgoing Student Award ( batch 2019 - 2023 )."
-      },
-      {
-        "education": true,
-        "company": "John Dewey Matric Hr Sec School",
-        "duration": "Jun 2017 - Mar 2019",
-        "title": "HSC, Mathematics and Computer Science",
-        "location": "Villupuram, TamilNadu, India",
-        "grade": "86.33",
-        "desc":"During My Higher Secondary, I am a chess player."
-      },
-      {
-        "education": true,
-        "company": "John Dewey Matric Hr Sec School",
-        "duration": "Jun 2016 - Mar 2017",
-        "title": "SSLC",
-        "location": "Villupuram, TamilNadu, India",
-        "grade": "97.6",
-        "desc":"During My SSLC, I am a chess player and a artist(painting)."
-      },
-      {
-        "education": false,
-        "company": "ThePortfolyo",
-        "duration": "Mar 2024 - May 2024",
-        "title": "React Developer - intern",
-        "location": "Remote",
-        "desc":"This is the virtual intership job offer"
-      },
-      {
-        "education": false,
-        "company": "Accenture",
-        "duration": "Dec 2023 - Dec 2023",
-        "title": "Data Analyst - intern",
-        "location": "Remote",
-        "desc":"This is the virtual internship program"
-      },
-      {
-        "education": false,
-        "company": "Besant Technologies",
-        "duration": "Sep 2023 - Oct 2023",
-        "title": "Dotnet Trainee",
-        "location": "Remote",
-        "desc":"This is the online course and Training Program."
-      }
-    ],
-    "contact": {
-      "location": "Erode, TamilNadu, India",
-      "mailId": "naveenpandianp@gmail.com",
-      "phoneNumber": "+91 6382710359"
-    },
-    "socials": [
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/@naveen-pandian/",
-        "image": ""
-      },
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/naveen.pandian.3192/",
-        "image": ""
-      },
-      {
-        "name": "linkedIn",
-        "url": "https://www.linkedin.com/in/naveen-pandian-p-111ab8193/",
-        "image": ""
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/mr_little_np/",
-        "image": ""
-      },
-      { "name": "github",
-        "url": "https://github.com/naveen-pandian", 
-        "image": ""
+        "match": "1",
+        "matchOn": "28/03/2026",
+        "entryFee": "0",
+        "players": [
+          {
+            "player": "001",
+            "paid": "0",
+            "points": "811"
+          },
+          {
+            "player": "002",
+            "paid": "0",
+            "points": "659"
+          },
+          {
+            "player": "003",
+            "paid": "0",
+            "points": "809.5"
+          },
+          {
+            "player": "004",
+            "paid": "50",
+            "points": "716.5"
+          }
+        ]
       }
     ]
   }

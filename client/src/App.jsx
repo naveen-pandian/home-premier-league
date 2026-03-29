@@ -4,10 +4,9 @@ import Home from './pages/Home';
 
 function App() {
     return (
-        <Router basename="/personal_portfolio">
+        <Router basename="/home-premier-league">
         <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/:user" element={<Home />} /> */}
         </Routes>
     </Router>
     );
