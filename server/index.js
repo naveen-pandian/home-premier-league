@@ -28,7 +28,7 @@ const User = mongoose.model('user',userSchema);
 
 //Routes
 app.get('/',(req,res)=>{
-    res.send('Hello MongoDB Atlas! and vercel!');
+    res.send('Hello MongoDB Atlas! and vercel! ');
 })
 app.get('/api/portfolio_data',async(req,res)=>{
     const users = await User.find();
