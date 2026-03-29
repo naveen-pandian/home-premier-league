@@ -46,9 +46,9 @@ const Home = () => {
     return (
         
         <>
-        <div> Pon Pandian</div>
-            {/* <Navbar/> 
-            <Background />
+        
+           
+            {/* <Background />
             <div className=' sm:ml-[140px] sm:mt-[25px] mt-[100px] flex flex-col justify-center items-center p-4' > 
             <Hero user={user}/>
             <About user={user}/>
@@ -58,6 +58,7 @@ const Home = () => {
             <Projects projects={sortedFilteredProject} />
              <Contact social={filteredSocialHandles} user={user}/>
             </div> */}
+             <Navbar/> 
    </>
     );
 }
